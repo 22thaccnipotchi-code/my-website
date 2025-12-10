@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azure Resorts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-glow bg-glow--one"></div>
+  <div class="bg-glow bg-glow--two"></div>
+
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">
+        <span class="logo__mark">✦</span>
+        <span class="logo__text">Azure Resorts</span>
+      </div>
+      <div class="nav__links">
+        <a href="#hero" class="nav__link">Home</a>
+        <a href="#resorts" class="nav__link">Resorts</a>
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#contact" class="nav__link nav__cta">Book now</a>
+      </div>
+    </nav>
+
+    <section id="hero" class="hero__content">
+      <div class="hero__text reveal">
+        <p class="eyebrow">Beach • Mountain • Island</p>
+        <h1>Escape to luxury resorts crafted for pure relaxation.</h1>
+        <p class="lead">
+          Discover curated stays with private lagoons, glassy pools, and sunrise views. Let us handle every detail from arrival to sunset cocktails.
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#resorts">Explore stays</a>
+          <a class="button button--ghost" href="#services">See experiences</a>
+        </div>
+        <div class="hero__stats">
+          <div>
+            <span class="stat__number">120+</span>
+            <span class="stat__label">Handpicked resorts</span>
+          </div>
+          <div>
+            <span class="stat__number">4.9★</span>
+            <span class="stat__label">Guest satisfaction</span>
+          </div>
+          <div>
+            <span class="stat__number">24/7</span>
+            <span class="stat__label">Concierge care</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual reveal">
+        <div class="hero__card">
+          <div class="hero__badge">New</div>
+          <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=1200&q=80" alt="Beach resort" loading="lazy">
+          <div class="hero__card-body">
+            <div>
+              <h3>Relax Beach Villas</h3>
+              <p>Maui, Hawaii</p>
+            </div>
+            <span class="pill">Private lagoon</span>
+          </div>
+        </div>
+        <div class="floating floating--one"></div>
+        <div class="floating floating--two"></div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="services" class="section section--light">
+      <div class="section__header reveal">
+        <p class="eyebrow">Services</p>
+        <h2>Everything for a perfect retreat</h2>
+        <p class="section__lead">From sunrise yoga to midnight room service, each stay is tailored to how you like to unwind.</p>
+      </div>
+      <div class="features">
+        <article class="feature-card reveal">
+          <div class="feature__icon">🌴</div>
+          <h3>Tropical escapes</h3>
+          <p>Beachfront villas with private decks, hammocks, and crystal water steps away.</p>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature__icon">🧘‍♂️</div>
+          <h3>Wellness curated</h3>
+          <p>Daily spa rituals, guided yoga, and chef-led nourishment menus personalized to you.</p>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature__icon">🛥️</div>
+          <h3>Signature experiences</h3>
+          <p>Sunset sails, reef snorkeling, mountain hikes, and private island picnics on demand.</p>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature__icon">🤝</div>
+          <h3>Concierge care</h3>
+          <p>Round-the-clock planning, airport transfers, and effortless check-ins tailored to your schedule.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="resorts" class="section">
+      <div class="section__header reveal">
+        <p class="eyebrow">Signature stays</p>
+        <h2>Resorts ready for your next escape</h2>
+        <p class="section__lead">Handpicked locations with serene views, boutique interiors, and unforgettable amenities.</p>
+      </div>
+      <div class="resort-grid" id="resortGrid"></div>
+    </section>
+
+    <section class="section section--light">
+      <div class="cta reveal">
+        <div>
+          <p class="eyebrow">Plan easily</p>
+          <h2>Tell us your dates, we handle the magic.</h2>
+          <p class="section__lead">Share your vibe and travel crew. We’ll send 3 tailored resort options within 24 hours.</p>
+        </div>
+        <a class="button button--primary" href="#contact">Start planning</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="contact reveal">
+        <div>
+          <p class="eyebrow">Concierge</p>
+          <h2>Ready to book your resort?</h2>
+          <p class="section__lead">Drop your destination or dates and we’ll curate your perfect stay.</p>
+        </div>
+        <form class="contact__form">
+          <label class="sr-only" for="destination">Destination</label>
+          <input id="destination" type="text" placeholder="Dream destination" required />
+
+          <label class="sr-only" for="dates">Dates</label>
+          <input id="dates" type="text" placeholder="Travel dates" required />
+
+          <label class="sr-only" for="guests">Guests</label>
+          <input id="guests" type="number" min="1" placeholder="Number of guests" required />
+
+          <button type="submit" class="button button--primary">Request quote</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <span class="logo__mark">✦</span>
+      <span class="logo__text">Azure Resorts</span>
+    </div>
+    <p>Curated stays in the world’s most relaxing destinations.</p>
+    <div class="footer__links">
+      <a href="#hero">Home</a>
+      <a href="#resorts">Resorts</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
